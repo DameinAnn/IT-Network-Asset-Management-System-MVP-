@@ -28,6 +28,8 @@
    python -m venv .venv
    source .venv/bin/activate  # Windows 使用 .venv\\Scripts\\activate
    pip install -r requirements.txt
+
+   > **提示**：依赖中已固定 `bcrypt==4.0.1` 版本，以避免在 Windows 环境下因较新版本的 `bcrypt` 与 Passlib 不兼容而导致服务启动失败。
    ```
 
 2. 启动 FastAPI 服务：
